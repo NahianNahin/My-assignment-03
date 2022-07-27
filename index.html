@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Pro Edu </title>
     <!-- BOOTSTRAP FRAMEWORK  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
@@ -13,21 +13,361 @@
 
     <!-- CUSTOM CSS  -->
     <style>
-        .primary-background{
-            background-color: #289BDE;
+        .primary-bg-color{
+          background-color: #289BDE;
         }
-        .primary-color{
-            color: #289BDE;
+        .bg-img-1{
+            background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)), url(images/cover/cover-1.png);
         }
+        .bg-img-2{
+            background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)), url(images/cover/cover-2.jpg);
+            background-position: center;  
+        }
+        .bg-img-3{
+            background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)), url(images/cover/cover-3.jpg); 
+        }
+        .bg-img-1,.bg-img-2,.bg-img-3{
+            height: 85vh ;
+            background-size: cover;
+            
+        }
+      @media only screen and (max-width: 688px) {
+        .bg-img-1,.bg-img-2,.bg-img-3{
+            height: 45vh ;
+            background-size: cover;
+            background-position: center;
+        }
+      }
+      @media only screen and (min-width: 689px) and (max-width: 992px) {
+        .bg-img-1,.bg-img-2,.bg-img-3{
+            height: 55vh ;
+            background-size: cover;
+            background-position: center;
+        }
+      }
+        
+
 
     </style>
   </head>
   <body>
     <section>
+        <!-- NAVBAR  -->
+        <nav class="navbar navbar-expand-lg bg-light ">
+            <div class="container">
+              <a class="navbar-brand fw-bolder fs-2" href="#">Pro Edu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto  mb-2 mb-lg-0">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">Deals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">Success </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">Register</a>
+                  </li>
+                </ul>
+                <form  role="search">
+                  <button class="btn btn-outline-info" type="submit">Register</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+          <!-- SLIDER  -->
+
+         <section class="container">
+          <div id="carouselExampleControls" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="text-center w-100   bg-img-1  rounded-3 d-flex justify-content-center align-items-center">
+                      <div>
+                          <p class="text-white fw-bold h1">
+                              Get Started Digital Learning
+                          </p>
+                          <p class="text-light fs-lg-5  ">It is a long established fact that a reader will be distracted by the readable 
+                              content of a page <br> when looking at its layout</p>
+                          <button class="btn btn-info text-white fw-bolder"> Get Started</button>
+                      </div>
+                  </div>                               
+              </div>
+              <div class="carousel-item">               
+                  <div class="text-center w-100 bg-img-2 rounded-3 d-flex justify-content-center align-items-center">
+                      <div>
+                          <p class="text-white fw-bold h1">
+                              Get Started Digital Learning
+                          </p>
+                          <p class="text-light fs-lg-5 ">It is a long established fact that a reader will be distracted by the readable 
+                              content of a page <br> when looking at its layout</p>
+                          <button class="btn btn-info text-white fw-bolder"> Get Started</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">  
+                  <div class="text-center w-100  bg-img-3 rounded-3 d-flex justify-content-center align-items-center">
+                      <div>
+                          <p class="text-white fw-bold h1">
+                              Get Started Digital Learning
+                          </p>
+                          <p class="text-light fs-6 fs-lg-5 ">It is a long established fact that a reader will be distracted by the readable 
+                              content of a page <br> when looking at its layout</p>
+                          <button class="btn btn-info text-white fw-bolder"> Get Started</button>
+                      </div>
+                  </div>   
+              </div>
+              
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+         </section>
+         <main>
+
+          <!-- COURSES SECTION  -->
+          <section class="container">
+            <div class="text-center py-4">
+              <h1 class="fw-bolder">
+                Discover Our Popular <br> Courses
+              </h1>
+              <p class="text-muted">
+                It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.
+              </p>
+            </div>
+            <div class="" >
+              <div class="row g-4">
+                <div class="col-lg-6 col-12">
+                   <!-- ---------------------COURSE-----------------  -->
+                <div class="card mb-3" >
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bolder">Fundamental Of UI/UX Design</h5>
+                        <p class="card-text">Some quick example text to build on the card title 
+                          and make up the bulk of the card.</p>
+                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                   <!-- ---------------------COURSE-----------------  -->
+                <div class="card mb-3" >
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images/course/course-2.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bolder">Javascript Basic to advanced</h5>
+                        <p class="card-text">Some quick example text to build on the card title 
+                          and make up the bulk of the card.</p>
+                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                   <!-- ---------------------COURSE-----------------  -->
+                <div class="card mb-3" >
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images/course/course-3.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bolder">Fullstack Web Development</h5>
+                        <p class="card-text">Some quick example text to build on the card title 
+                          and make up the bulk of the card.</p>
+                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <!-- ---------------------COURSE-----------------  -->
+                <div class="card mb-3" >
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images/course/course-4.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8 ">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bolder">Digital Marketing</h5>
+                        <p class="card-text">Some quick example text to build on the card title 
+                          and make up the bulk of the card.</p>
+                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <!-- ---------------------COURSE-----------------  -->
+                <div class="card mb-3" >
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images/course/course-5.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bolder">Photography Basic Rules</h5>
+                        <p class="card-text">Some quick example text to build on the card title 
+                          and make up the bulk of the card.</p>
+                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <!-- ---------------------COURSE-----------------  -->
+                <div class="card mb-3" >
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images/course/course-6.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bolder">Motion Graphics</h5>
+                        <p class="card-text">Some quick example text to build on the card title 
+                          and make up the bulk of the card.</p>
+                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center py-4"><button class="btn btn-info text-white fw-bolder"> See More Courses</button></div>
+          </section>
+          <!-- -------Explore The elearning Institute------- -->
+          <section class="container my-5">
+            <div class="card mb-3 border-0" style="background-color:#F4FAFD ;">
+              <div class="row g-0 ">
+                <div class="col-md-4">
+                  <img src="images/working.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" >
+                    <h5 class="card-title h1 fw-bolder">Explore The elearning <br> Institute</h5>
+                    <p class="card-text text-muted ">Experts in education and educational technology define elearning as “the delivery of training and education via networked interactivity and a range of other knowledge collection and distribution technologies” (Fry, 2000). Because of its delivery methods, elearning is also referred to as electronic learning or online learning. <span class="d-lg-none">.... <span class="fw-bolder text-info">See more</span></span></p>
+                    <p class="card-text text-muted d-none d-lg-block">One of the main benefits of eLearning for workforce preparation and growth is that you have a world of content types at your fingertips. Images, notices, infographics, games, and other forms of material render eLearning appealing to all. 4. Independent And Fast</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <button class="btn btn-info text-white fw-bolder"> Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ------------REGISTRATION----------- -->
+          <section class="container my-5">
+            <div class="card primary-bg-color p-5">
+              <div class="card-body d-flex justify-content-around align-items-center">
+                <div>
+                  <h1 class="text-light fw-bolder" >Ready to join?</h1>
+                <p class="text-light">It is a long established fact that a reader will be distracted by the 
+                  readable content of a page <br> when looking at its layout.</p>
+                </div>
+                <div>
+                  <!-- Button trigger modal -->
+                    <button type="button" class="btn bg-white fw-bolder text-info px-5 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Register
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Please,Register Here</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <!-- FORM  -->
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+                            </div>
+                            
+                            <!-- FORM  -->
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ------STUDENTS------ -->
+          
+          <section class="container my-5">
+            <div class="text-center py-4">
+              <h1 class="fw-bolder">
+                Discover Our Popular <br> Courses
+              </h1>
+              <p class="text-muted">
+                It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.
+              </p>
+            </div>
+          </section>
+          
+
+
+          
+         </main>
+
+
+
+
+
+
+
         
-    </section>
-
-
 
 
 
