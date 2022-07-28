@@ -36,6 +36,10 @@
             height: 45vh ;
             background-position: center;
         }
+        .img{
+          width: 387px;
+          height: 250px;
+        }
       }
       @media only screen and (min-width: 689px) and (max-width: 992px) {
         .bg-img-1,.bg-img-2,.bg-img-3{
@@ -49,7 +53,7 @@
     </style>
   </head>
   <body>
-    <section>
+    <section id="home">
         <!-- NAVBAR  -->
         <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container">
@@ -60,22 +64,22 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto  mb-2 mb-lg-0">
                   <li class="nav-item mx-2">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">Courses</a>
+                    <a class="nav-link mx-2" href="#courses">Courses</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">Deals</a>
+                    <a class="nav-link mx-2" href="#register">Register</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">Success </a>
+                    <a class="nav-link mx-2" href="#deals">Deals</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">About</a>
+                    <a class="nav-link mx-2" href="#success">Success</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">Register</a>
+                    <a class="nav-link mx-2" href="#faq">FAQ</a>
                   </li>
                 </ul>
                 <form  role="search">
@@ -99,7 +103,7 @@
                           </p>
                           <p class="text-light fs-lg-5  ">It is a long established fact that a reader will be distracted by the readable 
                               content of a page <br> when looking at its layout</p>
-                          <button class="btn btn-info text-white fw-bolder primary-bg-color"> Get Started</button>
+                          <button class="btn btn-info text-white fw-bolder primary-bg-color border-0 px-4"> Get Started</button>
                       </div>
                   </div>                               
               </div>
@@ -111,7 +115,7 @@
                           </p>
                           <p class="text-light fs-lg-5 ">It is a long established fact that a reader will be distracted by the readable 
                               content of a page <br> when looking at its layout</p>
-                          <button class="btn btn-info text-white fw-bolder primary-bg-color"> Get Started</button>
+                          <button class="btn btn-info text-white fw-bolder primary-bg-color border-0 px-4"> Get Started</button>
                       </div>
                   </div>
               </div>
@@ -123,7 +127,7 @@
                           </p>
                           <p class="text-light fs-6 fs-lg-5 ">It is a long established fact that a reader will be distracted by the readable 
                               content of a page <br> when looking at its layout</p>
-                          <button class="btn btn-info text-white fw-bolder primary-bg-color"> Get Started</button>
+                          <button class="btn btn-info text-white fw-bolder primary-bg-color border-0 px-4"> Get Started</button>
                       </div>
                   </div>   
               </div>
@@ -142,7 +146,7 @@
          <main>
 
           <!-- COURSES SECTION  -->
-          <section class="container">
+          <section class="container" id="courses">
             <div class="text-center py-4">
               <h1 class="fw-bolder">
                 Discover Our Popular <br> Courses
@@ -155,125 +159,90 @@
               <div class="row g-4">
                 <div class="col-lg-6 col-12">
                    <!-- ---------------------COURSE-----------------  -->
-                <div class="card mb-3" >
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title fw-bolder">Fundamental Of UI/UX Design</h5>
-                        <p class="card-text">Some quick example text to build on the card title 
-                          and make up the bulk of the card.</p>
-                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
-                      </div>
+                   <div class="card d-flex flex-md-row justify-content-start align-items-center">
+                    <div><img class="img" src="images/course/course-1.png" alt=""></div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder h3">Fundamental Of UI/UX Design</h5>
+                      <p class="card-text">Some quick example text to build on the card title 
+                        and make up the bulk of the card.</p>
+                      <p class="card-text text-info fw-bolder h5">Price : 20$</p>
                     </div>
                   </div>
-                </div>
                 </div>
                 <div class="col-lg-6 col-12">
                    <!-- ---------------------COURSE-----------------  -->
-                <div class="card mb-3" >
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="images/course/course-2.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title fw-bolder">Javascript Basic to advanced</h5>
-                        <p class="card-text">Some quick example text to build on the card title 
-                          and make up the bulk of the card.</p>
-                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
-                      </div>
+                   <div class="card d-flex flex-md-row justify-content-start align-items-center">
+                    <div><img class="img" src="images/course/course-2.png" alt=""></div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder h3">Javascript Basic to advanced</h5>
+                      <p class="card-text">Some quick example text to build on the card title 
+                        and make up the bulk of the card.</p>
+                      <p class="card-text text-info fw-bolder h5">Price : 20$</p>
                     </div>
                   </div>
-                </div>
                 </div>
                 <div class="col-lg-6 col-12">
                    <!-- ---------------------COURSE-----------------  -->
-                <div class="card mb-3" >
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="images/course/course-3.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title fw-bolder">Fullstack Web Development</h5>
-                        <p class="card-text">Some quick example text to build on the card title 
-                          and make up the bulk of the card.</p>
-                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
-                      </div>
+                   <div class="card d-flex flex-md-row justify-content-start align-items-center">
+                    <div><img class="img" src="images/course/course-3.png" alt=""></div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder h3">Fullstack Web Development</h5>
+                      <p class="card-text">Some quick example text to build on the card title 
+                        and make up the bulk of the card.</p>
+                      <p class="card-text text-info fw-bolder h5">Price : 20$</p>
                     </div>
                   </div>
                 </div>
-                </div>
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-6 col-12 d-none d-lg-block">
                   <!-- ---------------------COURSE-----------------  -->
-                <div class="card mb-3" >
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="images/course/course-4.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8 ">
-                      <div class="card-body">
-                        <h5 class="card-title fw-bolder">Digital Marketing</h5>
-                        <p class="card-text">Some quick example text to build on the card title 
-                          and make up the bulk of the card.</p>
-                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
-                      </div>
+                  <div class="card d-flex flex-md-row justify-content-start align-items-center">
+                    <div><img class="img" src="images/course/course-4.png" alt=""></div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder h3">Digital Marketing</h5>
+                      <p class="card-text">Some quick example text to build on the card title 
+                        and make up the bulk of the card.</p>
+                      <p class="card-text text-info fw-bolder h5">Price : 20$</p>
                     </div>
                   </div>
                 </div>
-                </div>
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-6 col-12 d-none d-lg-block">
                   <!-- ---------------------COURSE-----------------  -->
-                <div class="card mb-3" >
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="images/course/course-5.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title fw-bolder">Photography Basic Rules</h5>
-                        <p class="card-text">Some quick example text to build on the card title 
-                          and make up the bulk of the card.</p>
-                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
-                      </div>
+                  <div class="card d-flex flex-md-row justify-content-start align-items-center">
+                    <div><img class="img" src="images/course/course-5.png" alt=""></div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder h3">Photography Basic Rules</h5>
+                      <p class="card-text">Some quick example text to build on the card title 
+                        and make up the bulk of the card.</p>
+                      <p class="card-text text-info fw-bolder h5">Price : 20$</p>
                     </div>
                   </div>
                 </div>
-                </div>
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-6 col-12 d-none d-lg-block">
                   <!-- ---------------------COURSE-----------------  -->
-                <div class="card mb-3" >
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="images/course/course-6.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title fw-bolder">Motion Graphics</h5>
-                        <p class="card-text">Some quick example text to build on the card title 
-                          and make up the bulk of the card.</p>
-                        <p class="card-text"><small class="text-info fw-bolder">Price : 20$</small></p>
-                      </div>
+                  <div class="card d-flex flex-md-row justify-content-start align-items-center">
+                    <div><img class="img" src="images/course/course-6.png" alt=""></div>
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder h3">Motion Graphics</h5>
+                      <p class="card-text">Some quick example text to build on the card title 
+                        and make up the bulk of the card.</p>
+                      <p class="card-text text-info fw-bolder h5">Price : 20$</p>
                     </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
-            <div class="text-center py-4"><button class="btn btn-info primary-bg-color text-white fw-bolder"> See More Courses</button></div>
+            <div class="text-center py-4"><button class="btn btn-info primary-bg-color text-white fw-bolder border-0"> See More Courses</button></div>
           </section>
+
           <!-- -------Explore The elearning Institute------- -->
-          <section class="container my-5">
+          <section class="container my-5" id="aboutUs">
             <div class="card mb-3 border-0" style="background-color:#F4FAFD ;">
               <div class="row g-0 ">
                 <div class="col-md-4">
                   <img src="images/working.png" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
-                  <div class="card-body" >
+                  <div class="card-body p-lg-4 rounded-5" >
                     <h5 class="card-title h1 fw-bolder">Explore The elearning <br> Institute</h5>
                     <p class="card-text text-muted ">Experts in education and educational technology define elearning as “the delivery of training and education via networked interactivity and a range of other knowledge collection and distribution technologies” (Fry, 2000). Because of its delivery methods, elearning is also referred to as electronic learning or online learning. <span class="d-lg-none">.... <span class="fw-bolder text-info">See more</span></span></p>
                     <p class="card-text text-muted d-none d-lg-block">One of the main benefits of eLearning for workforce preparation and growth is that you have a world of content types at your fingertips. Images, notices, infographics, games, and other forms of material render eLearning appealing to all. 4. Independent And Fast</p>
@@ -291,14 +260,14 @@
                         <p class="text-muted"> Rating & Review</p>
                       </div>
                     </div>
-                    <button class=" btn btn-info primary-bg-color text-white fw-bolder "> See More</button>
+                    <button class=" btn btn-info primary-bg-color text-white fw-bolder border-0 px-4 "> Read More</button>
                   </div>
                 </div>
               </div>
             </div>
           </section>
           <!-- ------------REGISTRATION----------- -->
-          <section class="container my-5">
+          <section class="container my-5" id="register">
             <div class="card primary-bg-color p-5">
               <div class="card-body d-lg-flex justify-content-around align-items-center">
                 <div>
@@ -356,7 +325,7 @@
 
           <!-- ------STUDENTS------ -->
           
-          <section class="container my-5">
+          <section class="container my-5" id="deals">
             <div class="text-center py-4">
               <h1 class="fw-bolder">
                 Meet Our Successfull <br> Students
@@ -411,11 +380,11 @@
               </div>
             </div>
             <div class="text-center mt-4">
-              <button class=" btn btn-info primary-bg-color text-white fw-bolder "> See More</button>
+              <button class=" btn btn-info primary-bg-color text-white fw-bolder border-0 px-4 "> See More</button>
             </div>
           </section>
           <!-- --------------STUDENT FEEDBACK------------  -->
-          <section class="container my-5">
+          <section class="container my-5" id="success">
             <div class="text-center py-4">
               <h1 class="fw-bolder">
                 Some Students Feedback
@@ -455,9 +424,7 @@
                         <span class="text-muted"> UIUX Designer</span>
                       </div>
                     </div>
-                    <div>
-
-                    </div>
+                    
                   </div>
                  </div>
                 </div>
@@ -490,19 +457,20 @@
                           <span class="text-muted"> UIUX Designer</span>
                         </div>
                       </div>
-                      <div>
-  
-                      </div>
+                      
                     </div>
                    </div>
                 </div>
               </div>
             </div>
+            <div class="text-center mt-4 d-lg-none">
+              <button class=" btn btn-info primary-bg-color text-white fw-bolder border-0 px-4"> See More</button>
+            </div>
           </section>
 
           <!-- ---------------ASK QUESTION-------------  -->
 
-          <section class="container my-5 text-center">
+          <section class="container my-5 text-center" id="faq">
             <div class="text-center py-4">
               <h1 class="fw-bolder">
                 Frequently Asked Questions
